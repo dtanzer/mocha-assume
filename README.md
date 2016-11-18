@@ -1,12 +1,13 @@
 # Assumptions for mocha.js
 
-mocha-assume lets you skip tests when your assumptions about the test do not hold. You can use it to decouple your tests - to get rid of those situations where 10 tests fail because of the same failure.
+```mocha-assume``` lets you skip tests when your assumptions about the test do not hold. You can use it to decouple your tests - to get rid of those situations where 10 tests fail because of the same failure.
 
 ## How? Very Short Version
 
     npm install --save-dev mocha-assume
 
-Then, in your tests, use assuming to document your assumptions about tests:
+Then, in your tests, use ```assuming``` to document your assumptions about tests:
+
     import { assuming } from 'mocha-assume';
 
     assuming(true).it("This test will run", () => { /* ... */ });
@@ -50,6 +51,7 @@ Here's an example:
     });
 
 The output, when running those tests, is:
+
     request (without assumptions)
         1) returns a non-null request
             AssertionError: expected null not to be null
