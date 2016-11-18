@@ -12,6 +12,14 @@ Then, in your tests, use assuming to document your assumptions about tests:
     assuming(true).it("This test will run", () => { /* ... */ });
     assuming(false).it("This test will NOT run", () => { /* ... */ });
 
+## Need support?
+
+If you have any questions, need help with mocha-assume or have a feature request, feel free to contact me on Twitter or via email. If you want to stay in touch, follow me on Twitter.
+
+* David Tanzer | business@davidtanzer.net | <a href="https://twitter.com/dtanzer">@dtanzer</a>
+
+If you are interested in learning more about test driven development, clean code, and writing good tests, check out this course: http://www.davidtanzer.net/cc (subscribe to the mailing list if you are interested, but would like to have the course in a different location).
+
 ## Why? Very Short Version
 
 Sometimes, you have tests that look as if they are totally independent, but in reality, they are not: When one of them fails, all others fail too. The reason is that the first test tests a precondition for all other tests.
@@ -121,13 +129,6 @@ Now the output is:
         - invokes done when request completes without error - SKIPPED (Cannot read property 'should' of null)
 
 So now you can start de-coupling your tests.
-
-## Need support?
-
-If you have any questions, feel free to contact me on Twitter or via email:
-* David Tanzer | business@davidtanzer.net | <a href="https://twitter.com/dtanzer">@dtanzer</a>
-
-If you are interested in learning more about test driven development, clean code, and writing good tests, check out this course: http://www.davidtanzer.net/cc (subscribe to the mailing list if you are interested, but would like to have the course in a different location).
 
 ## LICENSE
 
