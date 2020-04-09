@@ -106,10 +106,8 @@ Now you can skip tests when your assumption about the precondition for the test 
         });
 
         describe("a valid request invokes all callbacks", () => {
-            let request = null;
+            let request = createRequest();
             
-            beforeEach(() => request = createRequest());
-
             assuming(() => request.should.not.be.null).it("invokes done when request completes without error", () => {
                 let doneInvoked = false;
                 const request = createRequest();
